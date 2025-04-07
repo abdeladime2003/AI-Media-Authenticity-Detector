@@ -9,7 +9,7 @@ def load_model():
     global model_instance
     if model_instance is None:
         print("Chargement du modèle...")
-        model_instance = tf.keras.models.load_model(r'C:\Users\LENOVO\Desktop\img_classification\mon_modele.keras')
+        model_instance = tf.keras.models.load_model(r'C:\Users\LENOVO\Desktop\img_classification\backend\mon_modele.keras')
     return model_instance
 class ModelLoader:
     def __init__(self):
@@ -17,7 +17,7 @@ class ModelLoader:
     
     def get_model(self):
         if self.model is None:
-            self.model = tf.keras.models.load_model(r'C:\Users\LENOVO\Desktop\img_classification\mon_modele.keras')
+            self.model = tf.keras.models.load_model(r'C:\Users\LENOVO\Desktop\img_classification\backend\mon_modele.keras')
         return self.model
 model_loader = ModelLoader()
 class PredictImageView(APIView):
