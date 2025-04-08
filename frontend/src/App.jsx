@@ -1,19 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HeroSection from './components/Hero';
-import ImageClassifierPage from './components/ImageClassifierPage';
-
-const HomePage = ({ darkMode, toggleDarkMode }) => (
-  <>
-    <HeroSection />
-  </>
-);
-
+import LandingPage from './Pages/LandingPage';
+import ImageClassifierPage from './Pages/ImageClassifierPage';
 const App = () => {
   return (
     <Router>
     <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<LandingPage />} />
             <Route path="/test" element={<ImageClassifierPage />} />
           </Routes>
     </Router>
