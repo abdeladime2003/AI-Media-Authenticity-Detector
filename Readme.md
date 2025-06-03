@@ -1,9 +1,3 @@
-# We'll save the README content to a markdown (.md) file
-
-readme_content = """# 🧠 Image Classification Web App
-
-A complete machine learning project including image preprocessing, model training, exploratory data analysis (EDA), and full-stack deployment with React (frontend), Django REST Framework (backend), and Docker.
-
 ## 🚀 Project Overview
 
 This project focuses on building and deploying an image classification system using deep learning. It includes:
@@ -36,7 +30,7 @@ Before training the model, we performed EDA to understand the structure and bala
 
 ## 🧠 Model Training
 
-The model was trained on the preprocessed data using TensorFlow/Keras. Evaluation metrics such as accuracy, loss, and confusion matrix were used to validate the model’s performance.
+The model Resnet50 was trained on the preprocessed data using TensorFlow/Keras. Evaluation metrics such as accuracy, loss, and confusion matrix were used to validate the model’s performance.
 
 ## 🖥️ Frontend
 
