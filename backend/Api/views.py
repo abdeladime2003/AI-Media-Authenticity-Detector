@@ -29,7 +29,7 @@ class PredictImageView(APIView):
         image = tf.cast(image, tf.float32) / 255.0  
         return image
     def post(self, request):
-        try:
+        try: 
             file_obj = request.FILES.get('image') 
             if not file_obj:
                 return JsonResponse({'error': 'Aucune image fournie'}, status=400)
