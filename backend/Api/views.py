@@ -30,7 +30,7 @@ class PredictImageView(APIView):
         return image
     def post(self, request):
         try:
-            file_obj = request.FILES.get('image')
+            file_obj = request.FILES.get('image') 
             if not file_obj:
                 return JsonResponse({'error': 'Aucune image fournie'}, status=400)
             img = Image.open(file_obj)
